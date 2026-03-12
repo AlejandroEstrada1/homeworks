@@ -34,22 +34,22 @@ class Pila {
 function App() {
   const librosMock = [
     {
-      nombre: "Clean Code",
-      isbn: "9780132350884",
-      autor: "Robert C. Martin",
-      editorial: "Prentice Hall",
+      nombre: "Cien años de soledad",
+      codigo: "978-0307474728",
+      autor: "Gabriel García Márquez",
+      editorial: "Debolsillo",
     },
     {
-      nombre: "El programador pragmático",
-      isbn: "9780201616224",
-      autor: "Andrew Hunt",
-      editorial: "Addison-Wesley",
+      nombre: "1984",
+      codigo: "978-8466332910",
+      autor: "George Orwell",
+      editorial: "Penguin Random House",
     },
     {
-      nombre: "JavaScript: The Good Parts",
-      isbn: "9780596517748",
-      autor: "Douglas Crockford",
-      editorial: "O'Reilly",
+      nombre: "El Principito",
+      codigo: "978-8478887194",
+      autor: "Antoine de Saint-Exupéry",
+      editorial: "Salamandra",
     },
   ];
 
@@ -57,7 +57,7 @@ function App() {
 
   const [formulario, setFormulario] = useState({
     nombre: "",
-    isbn: "",
+    codigo: "",
     autor: "",
     editorial: "",
   });
@@ -75,7 +75,7 @@ function App() {
 
     if (
       !formulario.nombre ||
-      !formulario.isbn ||
+      !formulario.codigo ||
       !formulario.autor ||
       !formulario.editorial
     ) {
@@ -87,7 +87,7 @@ function App() {
 
     nuevaPila.push({
       nombre: formulario.nombre,
-      isbn: formulario.isbn,
+      codigo: formulario.codigo,
       autor: formulario.autor,
       editorial: formulario.editorial,
     });
@@ -96,7 +96,7 @@ function App() {
 
     setFormulario({
       nombre: "",
-      isbn: "",
+      codigo: "",
       autor: "",
       editorial: "",
     });
@@ -135,9 +135,9 @@ function App() {
 
             <input
               type="text"
-              name="isbn"
-              placeholder="ISBN"
-              value={formulario.isbn}
+              name="codigo"
+              placeholder="CODIGO"
+              value={formulario.codigo}
               onChange={manejarCambio}
             />
 
@@ -187,7 +187,7 @@ function App() {
             {librosImpresos.map((libro, index) => (
               <div className="book-card" key={index}>
                 <h3>{libro.nombre}</h3>
-                <p><strong>ISBN:</strong> {libro.isbn}</p>
+                <p><strong>CODIGO:</strong> {libro.codigo}</p>
                 <p><strong>Autor:</strong> {libro.autor}</p>
                 <p><strong>Editorial:</strong> {libro.editorial}</p>
 
