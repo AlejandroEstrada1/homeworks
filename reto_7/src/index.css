@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d9e7ff, #f5f7fb);
+  min-height: 100vh;
+}
+
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  width: 100%;
+  max-width: 430px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.tarjeta h1 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitulo {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 6px;
+}
+
+.grupo-input label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.grupo-input input {
+  padding: 13px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.grupo-input input:focus {
+  border-color: #4a7dff;
+  box-shadow: 0 0 0 3px rgba(74, 125, 255, 0.15);
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2f5bea;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #2447b8;
+  transform: translateY(-1px);
+}
+
+.error {
+  color: #d62828;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.credenciales {
+  margin-top: 22px;
+  padding: 14px;
+  background-color: #f3f6ff;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.credenciales p {
+  margin-bottom: 6px;
+}
+
+.credenciales p:last-child {
+  margin-bottom: 0;
+}
+
+.texto-bienvenida {
+  margin: 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.usuario-actual {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.boton-enlace {
+  display: block;
+  text-decoration: none;
+  background-color: #eef3ff;
+  color: #2f5bea;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.boton-enlace:hover {
+  background-color: #dfe8ff;
+}
+
+.boton-salida {
+  background-color: #e63946;
+}
+
+.boton-salida:hover {
+  background-color: #c92d39;
+}
+
+.texto-pagina {
+  margin: 16px 0;
+  color: #444;
+  font-size: 15px;
+}
