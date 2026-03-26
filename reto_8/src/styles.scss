@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa, #dfe9f3);
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.list-group-item {
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
