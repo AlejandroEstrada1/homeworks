@@ -1,0 +1,132 @@
+.pantalla {
+  padding: 20px;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+}
+
+.lado {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.caja {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario input,
+.formulario select {
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  font: inherit;
+}
+
+.botones {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.gris {
+  border-color: #bbb;
+  background: #f3f4f6;
+  color: #111;
+}
+
+.ancho {
+  width: 100%;
+}
+
+.info {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.arbol {
+  min-height: 500px;
+}
+
+.arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ruta {
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+
+.lista {
+  max-height: 520px;
+  overflow: auto;
+}
+
+.item-arbol {
+  margin-bottom: 8px;
+}
+
+.nodo {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #111;
+}
+
+.nodo.activo {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.tipo {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.nombre {
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.correo {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .principal {
+    grid-template-columns: 1fr;
+  }
+}
