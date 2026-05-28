@@ -1,0 +1,190 @@
+$green: #1db954;
+$dark: #111;
+$light: #f7f8fa;
+$border: #d8dde5;
+$red: #d71920;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: $light;
+  color: $dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  margin-bottom: 20px;
+  background: $dark;
+  color: white;
+  border-radius: 8px;
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
+}
+
+.logo {
+  color: $green;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  padding: 20px;
+  background: white;
+  border: 1px solid $border;
+  border-radius: 8px;
+
+  h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+  }
+
+  h3 {
+    margin: 16px 0 8px;
+    font-size: 16px;
+  }
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $border;
+  border-radius: 6px;
+  background: white;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: $green;
+  color: $dark;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.status {
+  margin: 12px 0 0;
+  color: $red;
+  font-weight: 700;
+
+  &.ok {
+    color: $green;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+
+  button {
+    background: #ecfff3;
+    border: 1px solid #b8efcb;
+  }
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.ranking {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+
+  li {
+    padding: 10px;
+    border-left: 4px solid $green;
+    background: $light;
+  }
+
+  span {
+    display: grid;
+    gap: 3px;
+  }
+
+  small {
+    color: #59616c;
+  }
+
+  b {
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+.related {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.prefix-top,
+.adjacency {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid $border;
+
+  p {
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    display: grid;
+  }
+}
